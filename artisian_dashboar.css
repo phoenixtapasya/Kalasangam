@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dashboard-overview {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.overview-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.overview-card {
+    background-color: #e3e3e3;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.manage-section, .workshops-section, .sales-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.product-grid, .workshop-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item, .workshop-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.product-item img, .workshop-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.sales-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.sale-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: white;
+}

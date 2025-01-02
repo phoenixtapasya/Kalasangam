@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #34495e;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.artisan-profile-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.artisan-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.artisan-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.artisan-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 100px; /* Circular image */
+}
+
+.bio {
+    font-style: italic;
+}
+
+.contact-info {
+    color: #3498db; /* Link color */
+}
+
+.artisan-gallery {
+    margin-top: 20px;
+}
+
+.artisan-gallery h3 {
+    margin-bottom: 10px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #34495e;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

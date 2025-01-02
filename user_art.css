@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header styles */
+header {
+    background-color: #333; /* Dark gray */
+    color: #ff7f50; /* Coral color */
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Profile container styles */
+.profile-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    text-align: center;
+}
+
+.profile-header h2 {
+    color: #ff7f50; /* Coral */
+}
+
+.contact-info {
+    margin: 10px 0;
+}
+
+/* Bio styles */
+.profile-bio {
+    margin: 20px 0;
+}
+
+.gallery {
+    margin: 20px 0;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-images img {
+    width: calc(25% - 10px);
+    border: 2px solid #ff7f50; /* Coral border */
+}
+
+/* Call to action styles */
+.call-to-action {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.call-to-action button {
+    background-color: #ff7f50; /* Coral */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.call-to-action button:hover {
+    background-color: #e76a46; /* Darker coral on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}

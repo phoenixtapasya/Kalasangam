@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - KalaSangam</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html">KalaSangam</a> <!-- Link to home page -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Login Section -->
+    <div class="login-container">
+        <h1>Login to KalaSangam</h1>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="role">Login as:</label>
+            <select id="role" name="role" required>
+                <option value="user">User</option>
+                <option value="artisan">Artisan</option>
+            </select>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 KalaSangam. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Get the role selected (user or artisan)
+            const role = document.getElementById('role').value;
+            
+            // Redirect to different dashboards based on role
+            if (role === 'user') {
+                window.location.href = 'user-dashboard.html';
+            } else if (role === 'artisan') {
+                window.location.href = 'artisan-dashboard.html';
+            }
+        });
+    </script>
+</body>
+</html>

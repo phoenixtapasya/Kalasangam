@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Dashboard - KalaSangam</title>
+    <link rel="stylesheet" href="artisian_dashboar.css">
+</head>
+<body>
+    <header>
+        <div class="logo">KalaSangam</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artisian_profile.html">My Profile</a></li>
+                <li><a href="#manage-products">Manage Products</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#sales">Sales</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="dashboard-overview">
+        <h2>Welcome, [Artisan Name]</h2>
+        <div class="overview-grid">
+            <div class="overview-card">
+                <h3>Total Products</h3>
+                <p>12</p>
+                <a href="#manage-products" class="button">Manage Products</a>
+            </div>
+            <div class="overview-card">
+                <h3>Upcoming Workshops</h3>
+                <p>3</p>
+                <a href="#workshops" class="button">View Workshops</a>
+            </div>
+            <div class="overview-card">
+                <h3>Total Sales</h3>
+                <p>₹15,000</p>
+                <a href="#sales" class="button">View Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="manage-products" class="manage-section">
+        <h2>Manage Your Products</h2>
+        <a href="add-product.html" class="button">Add New Product</a>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="Images/Product1.jpg" alt="Product">
+                <h3>Product Name</h3>
+                <p>₹1200</p>
+                <a href="edit-product.html" class="button">Edit</a>
+            </div>
+            <div class="product-item">
+                <img src="Images/Product2.jpg" alt="Product">
+                <h3>Product Name</h3>
+                <p>₹1500</p>
+                <a href="edit-product.html" class="button">Edit</a>
+            </div>
+            <!-- Add more products here -->
+        </div>
+    </section>
+
+    <section id="workshops" class="workshops-section">
+        <h2>My Workshops</h2>
+        <div class="workshop-grid">
+            <div class="workshop-item">
+                <h3>Workshop Title</h3>
+                <p>Date: 25th October 2024</p>
+                <p>Location: Jaipur</p>
+                <a href="workshop-details.html" class="button">View Details</a>
+            </div>
+            <div class="workshop-item">
+                <h3>Workshop Title 2</h3>
+                <p>Date: 12th November 2024</p>
+                <p>Location: Delhi</p>
+                <a href="workshop-details.html" class="button">View Details</a>
+            </div>
+            <!-- Add more workshops here -->
+        </div>
+    </section>
+
+    <section id="sales" class="sales-section">
+        <h2>Recent Sales</h2>
+        <div class="sales-list">
+            <div class="sale-item">
+                <h3>Product Name</h3>
+                <p>Sold for: ₹1200</p>
+                <p>Sold on: 5th October 2024</p>
+            </div>
+            <div class="sale-item">
+                <h3>Product Name 2</h3>
+                <p>Sold for: ₹1500</p>
+                <p>Sold on: 10th October 2024</p>
+            </div>
+            <!-- Add more sales here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 KalaSangam. All rights reserved.</p>
+    </footer>
+</body>
+</html>
